@@ -25,27 +25,38 @@
                 <main>
                     <div>
                         <h1>Survey</h1>
+                        
                         <form action="#" method="post">
+                            
+                            <!-- Name Field -->
                             <p>
-                                <label for="name_field">What is your name? <span style="color:red;">*</span></label><br>
+                                <label for="name_field">What is your name?</label><br>
                                 <input type="text" id="name_field" name="name_field" required>
                             </p>
+
+                            <!-- Email Field -->
                             <p>
-                                <label for="email_field">What is your email? <span style="color:red;">*</span></label><br>
+                                <label for="email_field">What is your email?</label><br>
                                 <input type="email" id="email_field" name="email_field" required>
                             </p>
+
+                            <!-- Number Field -->
                             <p>
-                                <label for="best_whole_number">Which whole number is best? <span style="color:red;">*</span></label><br>
+                                <label for="best_whole_number">Which whole number is best?</label><br>
                                 <input type="number" id="best_whole_number" name="best_whole_number" min="1" required>
                             </p>
+
+                            <!-- Date Field -->
                             <p>
                                 <label for="best_day">Which day is best?</label><br>
                                 <input type="date" id="best_day" name="best_day">
                             </p>
+
+                            <!-- Dropdown List -->
                             <p>
-                                <label for="best_bear">Which bear is best? <span style="color:red;">*</span></label><br>
+                                <label for="best_bear">Which bear is best?</label><br>
                                 <select id="best_bear" name="best_bear" required>
-                                    <option value="">&nbsp;</option>
+                                    <option value=""> </option>
                                     <option value="Black">Black</option>
                                     <option value="Brown">Brown</option>
                                     <option value="Care">Care</option>
@@ -54,28 +65,28 @@
                                     <option value="Teddy">Teddy</option>
                                 </select>
                             </p>
-                            <fieldset>
-                                <legend>Do you like radio buttons?</legend>
-                                <ul>
-                                    <li>
-                                        <input type="radio" id="yes" name="enjoys_radio_buttons" value="yes">
-                                        <label for="yes">Yes</label>
-                                    </li>
-                                    <li>
-                                        <input type="radio" id="no" name="enjoys_radio_buttons" value="no">
-                                        <label for="no">No</label>
-                                    </li>
-                                    <li>
-                                        <input type="radio" id="none" name="enjoys_radio_buttons" value="none" checked>
-                                        <label for="none">None of your business?</label>
-                                    </li>
-                                </ul>
-                            </fieldset>
+
+                            <!-- Radio Buttons -->
+                            <p>
+                                <label>Do you like radio buttons?</label><br>
+                                <input type="radio" id="yes" name="enjoys_radio_buttons" value="yes">
+                                <label for="yes">Yes</label><br>
+                                
+                                <input type="radio" id="no" name="enjoys_radio_buttons" value="no">
+                                <label for="no">No</label><br>
+                                
+                                <input type="radio" id="none" name="enjoys_radio_buttons" value="none" checked>
+                                <label for="none">None of your business</label>
+                            </p>
+
+                            <!-- Multi-line Text Field -->
                             <p>
                                 <label for="life_meaning">What is the meaning of life?</label><br>
-                                <textarea id="life_meaning" name="life_meaning" rows="5" cols="50" 
+                                <textarea id="life_meaning" name="life_meaning" rows="5" cols="50"
                                 placeholder="Enter the correct answer here"></textarea>
                             </p>
+
+                            <!-- Submit Button -->
                             <p>
                                 <button type="submit">Send</button>
                             </p>
